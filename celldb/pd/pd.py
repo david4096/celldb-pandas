@@ -23,7 +23,7 @@ def df(connection, sample_ids, feature_ids):
         index=[x[0] for x in m],
         columns=feature_ids)
 
-def sparse(connection, sample_ids, feature_ids):
+def sparse_df(connection, sample_ids, feature_ids):
     """
     Takes a connection and lists of sample and feature ids and returns a sparse
     dataframe.

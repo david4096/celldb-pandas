@@ -4,11 +4,11 @@ from celldb.client import (
     list_features,
     list_samples,
     matrix,
-    upsert_samples,
-    sparse_dict)
+    sparse_matrix,
+    upsert_samples)
 
 from pd import (
-    df
+    df, sparse_df
 )
 
 assert connect
@@ -17,6 +17,7 @@ assert list_features
 assert list_samples
 assert matrix
 assert upsert_samples
-assert sparse_dict
+assert sparse_matrix
 
 assert df
+assert sparse_df
